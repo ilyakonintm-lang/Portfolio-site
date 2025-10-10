@@ -22,3 +22,15 @@ if (!verticalBtn || !horizontalBtn || !verticalGrid || !horizontalGrid) {
     verticalBtn.classList.remove('active');
   });
 }
+
+const videos = document.querySelectorAll('.folio-grid video');
+
+videos.forEach(video => {
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+});
