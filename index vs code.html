@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+  <header>
+    <nav class="navbar">
+    <ul class="nav-list">
+      <li><a class="active">my contacts</a></li>
+      <li><a href="mailto:ilyakonintm@gmail.com">ilyakonintm@gmail.com</a></li>
+      <li><a class="linkeding" href="https://t.me/xsouth_cartman">telegram</a></li>
+      <li><a class="linkeding" href="#">hh.ru</a></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2 class="first">About me</h2>
+      <img class="avatar" src="img/avatar.jpg" width="250" height="250" alt="My photo">
+      <div class="text-block">
+        <p class="MAIN"><b>Видеограф и монтажёр</b></p>
+        <p class="MAIN"><b>Специалист по медиа-контенту и видео-продакшену</b></p>
+        
+        <h4>
+          <img src="img/star svg.svg">
+          Видеомонтажер с более чем пятилетним опытом работы и оператор c более чем двухлетним опытом съемок.<br> Я создаю высококачественный видеоконтент для бизнеса и социальных сетей и открыт для других форматов.
+        </h4>
+        
+        <h4><img src="img/star svg.svg">
+          Создаю видеоконтент для социальных сетей и бизнеса. Моя задача — снимать и монтировать ролики,<br>которые привлекают внимание, удерживают зрителя и помогают показать ценность вашего продукта или услуги.</h4>
+      </div>
+    </section>
+    <!-- <section class="folio">
+      <h2>Портфолио</h2>
+      <button type="button">вертикальный</button>
+      <button type="button">горизонтальный</button>
+    </section> -->
+    <section class="folio">
+      <div class="folio-header">
+        <h2>ПОРТФОЛИО</h2>
+      </div>
+
+    <!-- <div class="folio-buttons">
+      <button type="button">вертикальный</button>
+      <button type="button">горизонтальный</button>
+    </div> -->
+      <div class="folio-buttons">
+        <button class="active" id="verticalBtn">вертикальный</button>
+        <button id="horizontalBtn">горизонтальный</button>
+      </div>
+
+  <!-- Сетка вертикальных видео -->
+      <div class="folio-grid vertical active">
+        <video src="vid/vertical/Reels about CNC marketing (1).mp4" controls></video>
+        <video src="vid/vertical/Reels about CNC marketing (2).mp4" controls></video>
+        <video src="vid/vertical/Reels about CNC marketing (3).mp4" controls></video>
+        <video src="vid/vertical/Reels about CNC marketing (4).mp4" controls></video>
+      </div>
+
+  <!-- Сетка горизонтальных видео -->
+      <div class="folio-grid horizontal">
+        <video src="vid/horizontal/1667735813344.mp4" controls></video>
+        <video src="vid/horizontal/Glass Morphism v2.mp4" controls></video>
+        <video src="videos/horiz3.mp4" controls></video>
+        <video src="videos/horiz4.mp4" controls></video>
+      </div>
+
+    
+</section>
+  </main>
+  <footer>
+    <p>developed by ilya konin</p>
+  </footer>
+  <!-- <div class="folio-grid">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+  </div> -->
+  <script src="script.js"></script>
+  </body>
+</html>

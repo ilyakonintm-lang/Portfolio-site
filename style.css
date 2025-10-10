@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f1f1f1;
+  color: #222;
+}
+
+
+
+.navbar {
+  background-color: #c4c4c4;         /* Цвет фона панели */
+  padding: 10px 30px;             /* Отступы */
+}
+
+.nav-list {
+  list-style: none;               /* Убираем маркеры списка */
+  display: flex;                  /* Располагаем пункты в одну линию */
+  justify-content: right;        /* Центрируем по горизонтали */
+  margin: 1px;
+  
+}
+
+.nav-list li {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  padding: 5px 20px;
+}
+.nav-list li:first-child{
+ border-left: 3px solid black;
+}
+
+.nav-list a {
+  color: #000000;                    /* Цвет текста */
+  text-decoration: none;          /* Убираем подчёркивание */
+  font-weight: 600;
+  transition: color 0.5s ease;    /* Плавный переход при наведении */
+}
+
+.nav-list a:hover {
+  color: #4600268e;                 /* Цвет при наведении */
+}
+
+.nav-list a.active {
+  color: #4b4b4b
+}
+
+.nav-list a.linkeding{
+  background-image: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e8a60408a0cee2f9483d079_arrow-link.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: left center;
+  padding-left: 20px; 
+  display: inline-flex; /* помогает выровнять по высоте */
+  align-items: center; /* выравнивает текст по иконке */
+  /* padding-right: 10px; */
+  
+  
+}
+
+
+
+.ql-link {
+  display: inline-block;
+  width: 25%;
+  padding: 20px;
+  border-right: 4px solid #000;
+  background-image: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e8a60408a0cee2f9483d079_arrow-link.svg);
+  background-repeat: no-repeat;
+  background-position: 90%, 50%;
+  background-size: 20px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quick-links-wrapper{
+  position: relative;
+  z-index: 1;
+  margin-bottom: -40px;
+  border: 4px solid #000;
+  background-color: #c4c4c4;
+}
+
+h2.first {
+  visibility: hidden;
+}
+
+/* img.avatar {
+  margin-left: 20%;
+  border-radius: 50%; 
+} */
+
+/* p.MAIN {
+  font-size: 25px;
+} */
+
+section {
+  display: flex;              /* ставим фото и текст в одну линию */
+  align-items: center;        /* выравнивание по вертикали */
+  justify-content: flex-start;
+  gap: 11px;                  /* расстояние между фото и текстом */
+  /* background: linear-gradient(to right, #f9f9f9, #757575); */
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1300px;
+  margin: 10px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.avatar {
+  border-radius: 50%;         /* делаем круглую аватарку */
+  width: 220px;
+  height: 220px;
+  object-fit: cover;          /* чтобы не искажалась */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-right: 30px;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+}
+
+p.MAIN {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  display: flex;
+
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 12px;
+  color: #222;
+}
+
+h4 img {
+   width: 15px;
+   margin: 0px;
+   vertical-align: middle; /* выровняет иконку по центру строки */
+   margin-right: 5px;      
+}
+
+.folio {
+  display: block;              /* ⬅️ отменяем flex */
+  text-align: center;
+  padding: 30px 0 60px;
+  border-radius: 20px;
+
+  /* box-shadow: none; */
+}
+
+.folio-header {
+  background: #d1d2d3;
+  border-top: 0px solid #6b6b6b;
+  border-bottom: 0ch solid #6b6b6b;
+  padding: 10px 0px;
+}
+
+.folio-header h2 {
+  background: #d4d4d4;
+  border: 3px solid black;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.folio-buttons {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;      
+}
+
+.folio-buttons button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #555;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: lowercase;
+  letter-spacing: 1px;      
+}
+
+.folio-buttons button.active{
+  color: black;
+  border-color: black;
+  text-shadow: 3px 3px 10px rgb(122, 122, 122);
+}
+.folio-buttons button:hover {
+  color: black;
+  border-color: black;
+}
+
+/* Серые заглушки для работ */
+/* .folio-grid {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.folio-grid .item {
+  width: 180px;
+  height: 260px;
+  background: #ddd;
+  border-radius: 8px;
+} */
+
+.folio-grid {
+  margin-top: 20px;
+  display: none; /* скрыты по умолчанию */
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.folio-grid.active {
+  display: flex; /* показываем активную сетку */
+}
+
+.folio-grid video {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.folio-grid video:hover {
+  transform: scale(1.08);
+}
+
+/* размеры под типы видео */
+.folio-grid.vertical video {
+  width: 200px;
+  height: 350px;
+}
+
+.folio-grid.horizontal video {
+  width: 350px;
+  height: 200px;
+}
+
+footer {
+  text-align: center;          /* по центру */
+  padding: 6px 0;             /* отступ сверху/снизу */
+  color: #555;                 /* мягкий серый текст */
+  font-size: 12px;             /* немного меньше основного текста */
+  border-top: px solid #ddd;  /* тонкая линия сверху */
+  
+}
+
+footer p {
+  margin: 10px;
+  padding-bottom: 10px;                 /* убираем стандартные отступы <p> */
+  font-family: 'Montserrat', sans-serif; /* твой любимый шрифт :) */
+}
