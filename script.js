@@ -1,28 +1,43 @@
+const motionBtn = document.getElementById('motionBtn');
 const verticalBtn = document.getElementById('verticalBtn');
 const horizontalBtn = document.getElementById('horizontalBtn');
+
+const motionGrid = document.querySelector('.folio-grid.motion');
 const verticalGrid = document.querySelector('.folio-grid.vertical');
 const horizontalGrid = document.querySelector('.folio-grid.horizontal');
 
-if (!verticalBtn || !horizontalBtn || !verticalGrid || !horizontalGrid) {
+const buttons = [motionBtn, verticalBtn, horizontalBtn];
+const grids = [motionGrid, verticalGrid, horizontalGrid];
+
+if (buttons.includes(null) || grids.includes(null)) {
   console.error('Не найдены элементы. Проверь id/class в HTML:', {
-    verticalBtn, horizontalBtn, verticalGrid, horizontalGrid
+    motionBtn, verticalBtn, horizontalBtn,
+    motionGrid, verticalGrid, horizontalGrid
   });
 } else {
+
+  function activateSection(activeBtn, activeGrid) {
+    buttons.forEach(btn => btn.classList.remove('active'));
+    grids.forEach(grid => grid.classList.remove('active'));
+
+    activeBtn.classList.add('active');
+    activeGrid.classList.add('active');
+  }
+
+  motionBtn.addEventListener('click', () => {
+    activateSection(motionBtn, motionGrid);
+  });
+
   verticalBtn.addEventListener('click', () => {
-    verticalGrid.classList.add('active');
-    horizontalGrid.classList.remove('active');
-    verticalBtn.classList.add('active');
-    horizontalBtn.classList.remove('active');
+    activateSection(verticalBtn, verticalGrid);
   });
 
   horizontalBtn.addEventListener('click', () => {
-    horizontalGrid.classList.add('active');
-    verticalGrid.classList.remove('active');
-    horizontalBtn.classList.add('active');
-    verticalBtn.classList.remove('active');
+    activateSection(horizontalBtn, horizontalGrid);
   });
 }
 
+/* play / pause по клику */
 const videos = document.querySelectorAll('.folio-grid video');
 
 videos.forEach(video => {

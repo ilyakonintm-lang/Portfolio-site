@@ -23,12 +23,12 @@
       <div class="text-block">
         <p class="MAIN"><b>Видеограф и монтажёр</b></p>
         <p class="MAIN"><b>Специалист по медиа-контенту и видео-продакшену</b></p>
-        
+
         <h4>
           <img src="img/star svg.svg">
           Я контент-креатор с более чем 5-летним коммерческим опытом в видеомонтаже и 2+ годами практики в видеосъёмке.<br> Я создаю высококачественный видеоконтент для бизнеса и социальных сетей и открыт для других форматов.
         </h4>
-        
+
         <h4><img src="img/star svg.svg">
           Создаю видеоконтент для социальных сетей и бизнеса. Моя задача — снимать и монтировать ролики,<br>которые привлекают внимание, удерживают зрителя и помогают показать ценность вашего продукта или услуги.</h4>
       </div>
@@ -38,40 +38,47 @@
       <button type="button">вертикальный</button>
       <button type="button">горизонтальный</button>
     </section> -->
-    <section class="folio">
-      <div class="folio-header">
-        <h2>ПОРТФОЛИО</h2>
-      </div>
+<section class="folio">
+  <div class="folio-header">
+    <h2>ПОРТФОЛИО</h2>
+  </div>
 
-    <!-- <div class="folio-buttons">
-      <button type="button">вертикальный</button>
-      <button type="button">горизонтальный</button>
-    </div> -->
-      <div class="folio-buttons">
-        <button class="active" id="verticalBtn">вертикальный</button>
-        <button id="horizontalBtn">горизонтальный</button>
-      </div>
+  <!-- Кнопки -->
+  <div class="folio-buttons">
+    <button class="active" data-target="motion">motion-graphics</button>
+    <button data-target="vertical">вертикальный</button>
+    <button data-target="horizontal">горизонтальный</button>
+  </div>
 
-  <!-- Сетка вертикальных видео -->
-      <div class="folio-grid vertical active">
+
+    <div class="folio-grid motion active">
+        <video src="vid/motion/Glass Morphism.mp4" controls></video>
+        <video src="vid/motion/Promo.mp4" controls></video>
+        <video src="vid/motion/Super Main_1_1.mp4" controls></video>
+        <video src="vid/motion/Lower Third.mp4" controls></video>
+        <video src="vid/motion/Intro Uncle Vova.mp4" controls></video>
+        <video src="vid/motion/ScreenSaver.mp4" controls></video>
+    </div>
+
+
+    <div class="folio-grid vertical">
         <video src="vid/vertical/Reels about CNC marketing (1)_1_1.mp4" controls></video>
         <video src="vid/vertical/Reels about CNC marketing (2)_1_1.mp4" controls></video>
         <video src="vid/vertical/Reels about CNC marketing (3)_1_1.mp4" controls></video>
         <video src="vid/vertical/Reels about CNC marketing (4)_1_1.mp4" controls></video>
-      </div>
+    </div>
 
-  <!-- Сетка горизонтальных видео -->
-      <div class="folio-grid horizontal">
+
+    <div class="folio-grid horizontal">
         <video src="vid/horizontal/Promo personal-cabinet functions_1.mp4" controls></video>
         <video src="vid/horizontal/Video-review oil mist collector_1.mp4" controls></video>
         <video src="vid/horizontal/Video-review system mesure for CNC_1.mp4" controls></video>
         <video src="vid/horizontal/Vlog about CNC delivery (Youtube)_1.mp4" controls></video>
         <video src="vid/horizontal/how buy foreign CNC machines_1.mp4" controls></video>
         <video src="vid/horizontal/final copy v1.4_1.mp4" controls></video>
-      </div>
-
-    
+    </div>
 </section>
+
   </main>
   <footer>
     <p>developed by ilya konin</p>

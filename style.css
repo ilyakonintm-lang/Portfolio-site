@@ -273,3 +273,15 @@ footer p {
   padding-bottom: 10px;                 /* убираем стандартные отступы <p> */
   font-family: 'Montserrat', sans-serif; /* твой любимый шрифт :) */
 }
+
+/* Сетка motion — крупные видео */
+.folio-grid.motion video {
+  width: 400px;       /* большая ширина */
+  height: 225px;      /* соотношение 16:9 */
+}
+
+.folio-grid.motion {
+  justify-content: center;  /* центрируем видео */
+  gap: 30px;                /* расстояние между видео */
+}
+
